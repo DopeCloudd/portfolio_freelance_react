@@ -12,11 +12,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
-import { LogoIcon } from "@/components/Icons";
 
 interface RouteProps {
   href: string;
@@ -54,8 +53,7 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ShadcnUI/React
+              VALENTIN LEROUGE
             </a>
           </NavigationMenuItem>
 
@@ -126,12 +124,21 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/DopeCloudd"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
               <GitHubLogoIcon className="mr-2 w-5 h-5" />
               Github
+            </a>
+            <a
+              rel="noreferrer noopener"
+              href="https://github.com/DopeCloudd"
+              target="_blank"
+              className={`border ${buttonVariants({ variant: "default" })}`}
+            >
+              <PaperPlaneIcon className="mr-2 w-5 h-5" />
+              Contact
             </a>
 
             <ModeToggle />
