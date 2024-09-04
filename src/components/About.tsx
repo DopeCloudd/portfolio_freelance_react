@@ -1,4 +1,4 @@
-import portrait from "@/assets/portoflio_portrait.png";
+import portrait from "@/assets/file.png";
 
 export const About = () => {
   return (
@@ -8,7 +8,7 @@ export const About = () => {
           <img
             src={portrait}
             alt=""
-            className="w-[300px] object-contain rounded-lg"
+            className="w-[300px] h-[300px] object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
             <div className="pb-6">
