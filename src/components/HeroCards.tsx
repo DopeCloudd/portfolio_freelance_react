@@ -26,12 +26,12 @@ export const HeroCards = () => {
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Anaïs DI FILIPPO</CardTitle>
+            <CardDescription>@anais_df_10</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>Un plaisir de travailler avec Valentin !</CardContent>
       </Card>
 
       {/* Team */}
@@ -89,37 +89,37 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free
+            Mes services
             <Badge variant="secondary" className="text-sm text-primary">
-              Most popular
+              Populaire
             </Badge>
           </CardTitle>
-          <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
-          </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+            Voici quelques services que je propose à mes clients.
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button className="w-full">Collaborer avec moi</Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
-              (benefit: string) => (
-                <span key={benefit} className="flex">
-                  <Check className="text-green-500" />{" "}
-                  <h3 className="ml-2">{benefit}</h3>
-                </span>
-              )
-            )}
+            {[
+              "Site vitrine",
+              "Site e-commerce",
+              "Application sur mesure",
+              "SEO",
+              "Maintenance",
+            ].map((benefit: string) => (
+              <span key={benefit} className="flex">
+                <Check className="text-green-500" />{" "}
+                <h3 className="ml-2">{benefit}</h3>
+              </span>
+            ))}
           </div>
         </CardFooter>
       </Card>
@@ -131,10 +131,10 @@ export const HeroCards = () => {
             <LightBulbIcon />
           </div>
           <div>
-            <CardTitle>Light & dark mode</CardTitle>
+            <CardTitle>Une idée de projet ?</CardTitle>
             <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
+              Je serai ravi de vous accompagner dans la réalisation de votre
+              projet.
             </CardDescription>
           </div>
         </CardHeader>
