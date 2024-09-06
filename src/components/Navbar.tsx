@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -11,11 +10,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { useState } from "react";
 
-import { GitHubLogoIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
-import { buttonVariants } from "./ui/button";
-import { Menu } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
+import { GitHubLogoIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
+import { Menu } from "lucide-react";
+import { buttonVariants } from "./ui/button";
 
 interface RouteProps {
   href: string;
@@ -24,16 +24,12 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
-  },
-  {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#services",
+    label: "Collaboration",
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "Tarifs",
   },
   {
     href: "#faq",
