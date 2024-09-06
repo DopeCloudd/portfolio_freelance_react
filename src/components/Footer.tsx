@@ -114,14 +114,14 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
+          <h3 className="font-bold text-lg">Utiles</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Youtube
+              Mentions légales
             </a>
           </div>
 
@@ -131,7 +131,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Discord
+              Politique de confidentialité
             </a>
           </div>
 
@@ -141,7 +141,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Twitch
+              Plan du site
             </a>
           </div>
         </div>
