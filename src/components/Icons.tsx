@@ -1,3 +1,5 @@
+// https://www.streamlinehq.com/icons/freehand-free?search=chart&icon=ico_diRvLit38nO4EbWC
+
 export const LogoIcon = () => {
   return (
     <svg
