@@ -9,7 +9,7 @@ export const Cta = () => {
             Votre
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               {" "}
-              Personnalité et Besoins{" "}
+              Image{" "}
             </span>
             en un site web
           </h2>
@@ -22,7 +22,7 @@ export const Cta = () => {
 
         <div className="space-y-4 lg:col-start-2">
           <Button className="w-full md:mr-4 md:w-auto">
-            Demander un rendez-vous
+            Demander un devis
           </Button>
           <Button variant="outline" className="w-full md:w-auto">
             Voir mes services
