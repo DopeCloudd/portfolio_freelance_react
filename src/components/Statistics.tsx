@@ -10,7 +10,7 @@ export const Statistics = () => {
       description: "Années d'expérience",
     },
     {
-      quantity: "12",
+      quantity: "18",
       description: "Projets réalisés",
     },
     {
