@@ -9,9 +9,9 @@ export const Cta = () => {
             Votre
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               {" "}
-              Image{" "}
+              site web{" "}
             </span>
-            en un site web
+            à votre image
           </h2>
           <p className="text-muted-foreground text-xl mt-4 mb-8 lg:mb-0">
             Vos attentes sont uniques, votre site web doit l'être aussi. Je vous
