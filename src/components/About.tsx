@@ -1,5 +1,4 @@
 import portrait from "@/assets/file.png";
-import { Statistics } from "@/components/Statistics";
 
 export const About = () => {
   return (
@@ -23,15 +22,16 @@ export const About = () => {
                 Développeur web freelance basé à Montpellier, je vous accompagne
                 dans la création de votre site ou application web sur mesure.
                 <br />
+                <br />
                 Avec une expérience de plus de 5 ans dans le développement web,
                 je vous propose des solutions adaptées à vos besoins.
+                <br />
                 <br />
                 Je serai vous accompagner tout au long de votre projet, de la
                 conception à la mise en ligne. N'hésitez pas à me contacter pour
                 discuter de votre projet.
               </p>
             </div>
-            <Statistics />
           </div>
         </div>
       </div>
