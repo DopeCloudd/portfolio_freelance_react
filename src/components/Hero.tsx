@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { HeroCards } from "@/components/HeroCards";
+import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
@@ -37,7 +37,7 @@ export const Hero = () => {
       </div>
 
       {/* Shadow effect */}
-      <div className="shadow"></div>
+      <div className="shadow-bg"></div>
     </section>
   );
 };
