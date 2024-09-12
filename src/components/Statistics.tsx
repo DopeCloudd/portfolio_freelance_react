@@ -24,8 +24,8 @@ export const Statistics = () => {
   ];
 
   return (
-    <section id="statistics">
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+    <section id="statistics" className="bg-muted/50 py-8 sm:py-12">
+      <div className="flex flex-wrap justify-center items-center md:gap-20">
         {stats.map(({ quantity, description }: statsProps) => (
           <div key={description} className="space-y-2 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold ">{quantity}</h2>
