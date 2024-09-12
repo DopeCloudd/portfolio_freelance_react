@@ -13,8 +13,9 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "Comment est calculé mon devis ?",
+    answer:
+      "Après une première prise de contact et basé sur vos besoins, je vous enverrai un devis détaillé avec toutes les actions que je vais réaliser pour répondre à vos attentes.",
     value: "item-1",
   },
   {
