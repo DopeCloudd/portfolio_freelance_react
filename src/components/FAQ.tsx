@@ -19,28 +19,27 @@ const FAQList: FAQProps[] = [
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "Comment suivre l'évolution de mon projet ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Nous aurons des points réguliers pour valider l'avancement et apporter des modifications si nécessaire.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+    question: "Comment est réalisé le design de mon site ?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+      "Je réalise d'abord un design sur mesure pour votre site en vous faisant part de toutes les possibilités offertes.",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Comment est réalisé le développement de mon site ?",
+    answer:
+      "Une fois le design et le cahier des charges validés, je réalise le développement de votre site suivant l'offre que vous aurez choisie.",
     value: "item-4",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+    question: "Comment se passe la livraison de mon site ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Une fois le développement terminé et votre site testé, je vous livre le site avec un guide d'utilisation et une petite formation.",
     value: "item-5",
   },
 ];
