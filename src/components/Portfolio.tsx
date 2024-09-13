@@ -1,43 +1,51 @@
-import Ltk from "../assets/ltk.png";
-import Myprottracker from "../assets/myprottracker.png";
+import Ltk from "@/assets/ltk.png";
+import Myprottracker from "@/assets/myprottracker.png";
+import Mockup_Myprottracker from "@/assets/mockup-myprottracker.png";
+import Mockup_Ltk from "@/assets/mockup-ltk.png";
 
 export const Portfolio = () => {
   interface website {
     url: string;
     title: string;
     image?: string;
+    description: string;
   }
 
   const websites: website[] = [
     {
       url: "https://www.myprottracker.com/",
       title: "MyProtTracker",
-      image: Myprottracker,
+      image: Mockup_Myprottracker,
+      description: "Design et développement sur mesure en React et Node.js",
     },
     {
       url: "https://anais-difilippo.fr/",
       title: "Anaïs Di filippo",
       image: Myprottracker,
+      description: "Design et développement via WordPress",
     },
     {
       url: "https://ltk-couverture.fr/",
       title: "LTK Couverture",
-      image: Ltk,
+      image: Mockup_Ltk,
+      description: "Design et développement via WordPress",
     },
     {
       url: "https://optifroid.fr/",
       title: "Optifroid",
       image: Ltk,
+      description: "Design et développement via WordPress",
     },
     {
       url: "https://optima-groupe.com/",
       title: "Optima Groupe",
       image: Ltk,
+      description: "Design et développement via WordPress",
     },
   ];
 
   return (
-    <section id="statistics" className="text-center py-24 sm:py-32">
+    <section id="portfolio" className="container text-center py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold ">
         Mes{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -48,11 +56,15 @@ export const Portfolio = () => {
         Voici quelques-uns des sites web que j'ai réalisés pour mes clients.
       </p>
 
-      <div className="flex flex-wrap justify-center items-center md:gap-20">
-        {websites.map(({ url, title, image }: website) => (
-          <div key={title} className="space-y-3 w-[300px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {websites.map(({ url, title, image, description }: website) => (
+          <div
+            key={title}
+            className="space-y-3 cursor-pointer"
+            onClick={() => window.open(url, "_blank")}
+          >
             <span data-state="closed">
-              <div className="overflow-hidden rounded-md">
+              <div className="overflow-hidden rounded-md relative border border-muted">
                 <img
                   alt="Thinking Components"
                   loading="lazy"
@@ -60,17 +72,16 @@ export const Portfolio = () => {
                   height="200"
                   decoding="async"
                   data-nimg="1"
-                  className="h-auto w-auto object-cover transition-all hover:scale-105"
+                  className="w-auto object-cover transition-all hover:scale-105"
                   srcSet={image}
                   src={image}
                 />
+                <div className="space-y-1 text-left font-bold text-sm absolute bottom-0 z-10 bg-white/75 dark:bg-black/75 w-full p-4">
+                  {title}
+                  <p className="text-muted-foreground text-sm">{description}</p>
+                </div>
               </div>
             </span>
-            <div className="space-y-1 text-sm">
-              <a className="font-medium leading-none" href={url}>
-                {title}
-              </a>
-            </div>
           </div>
         ))}
       </div>
