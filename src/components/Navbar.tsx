@@ -28,12 +28,20 @@ const routeList: RouteProps[] = [
     label: "Collaboration",
   },
   {
+    href: "#portfolio",
+    label: "Portfolio",
+  },
+  {
     href: "#pricing",
     label: "Tarifs",
   },
   {
     href: "#faq",
     label: "FAQ",
+  },
+  {
+    href: "#blog",
+    label: "Blog",
   },
 ];
 
