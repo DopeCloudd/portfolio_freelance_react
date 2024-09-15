@@ -25,11 +25,11 @@ interface RouteProps {
 const routeList: RouteProps[] = [
   {
     href: "#services",
-    label: "Collaboration",
+    label: "Étapes",
   },
   {
     href: "#portfolio",
-    label: "Portfolio",
+    label: "Projets",
   },
   {
     href: "#pricing",
@@ -38,10 +38,6 @@ const routeList: RouteProps[] = [
   {
     href: "#faq",
     label: "FAQ",
-  },
-  {
-    href: "#blog",
-    label: "Blog",
   },
 ];
 
@@ -128,16 +124,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/DopeCloudd"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-            <a
-              rel="noreferrer noopener"
-              href="https://github.com/DopeCloudd"
+              href="mailto:contact@valentin-lerouge.fr"
               target="_blank"
               className={`border ${buttonVariants({ variant: "default" })}`}
             >
