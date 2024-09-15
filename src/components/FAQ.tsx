@@ -70,7 +70,8 @@ export const FAQ = () => {
         Vous avez d'autres questions ?{" "}
         <a
           rel="noreferrer noopener"
-          href="#"
+          href="mailto:contact@valentin-lerouge.fr"
+          target="_blank"
           className="text-primary transition-all border-primary hover:border-b-2"
         >
           Me contacter
