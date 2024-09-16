@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
 export const Cta = () => {
   return (
@@ -27,9 +28,13 @@ export const Cta = () => {
           >
             Demander un devis
           </Button>
-          <Button variant="outline" className="w-full md:w-auto">
-            Voir mes services
-          </Button>
+          <a
+            rel="noreferrer noopener"
+            href="#pricing"
+            className={`border ${buttonVariants({ variant: "outline" })}`}
+          >
+            Voir les tarifs
+          </a>
         </div>
       </div>
     </section>
