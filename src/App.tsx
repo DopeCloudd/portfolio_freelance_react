@@ -8,6 +8,8 @@ import { Portfolio } from "@/components/Portfolio";
 import { Pricing } from "@/components/Pricing";
 import { Services } from "@/components/Services";
 import { Statistics } from "@/components/Statistics";
+import { Marketing } from "@/components/Marketing";
+import { Reviews } from "@/components/Reviews";
 import "./app.css";
 
 function App() {
@@ -19,9 +21,11 @@ function App() {
       <Statistics />
       <Services />
       <Portfolio />
+      <Marketing />
       <Cta />
       <Pricing />
       <FAQ />
+      <Reviews />
       <Footer />
     </>
   );
