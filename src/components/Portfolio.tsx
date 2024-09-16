@@ -1,7 +1,6 @@
-import Ltk from "@/assets/ltk.png";
-import Myprottracker from "@/assets/myprottracker.png";
 import Mockup_Myprottracker from "@/assets/mockup-myprottracker.png";
 import Mockup_Ltk from "@/assets/mockup-ltk.png";
+import Mockup_Garnem from "@/assets/mockup-garnem.png";
 
 export const Portfolio = () => {
   interface website {
@@ -19,9 +18,15 @@ export const Portfolio = () => {
       description: "Design et développement sur mesure en React et Node.js",
     },
     {
+      url: "https://garnem.com/",
+      title: "Garnem",
+      image: Mockup_Garnem,
+      description: "Refonte graphique et développement d'un site vitrine",
+    },
+    {
       url: "https://anais-difilippo.fr/",
       title: "Anaïs Di filippo",
-      image: Myprottracker,
+      image: Mockup_Ltk,
       description: "Design et développement via WordPress",
     },
     {
@@ -33,13 +38,13 @@ export const Portfolio = () => {
     {
       url: "https://optifroid.fr/",
       title: "Optifroid",
-      image: Ltk,
+      image: Mockup_Ltk,
       description: "Design et développement via WordPress",
     },
     {
       url: "https://optima-groupe.com/",
       title: "Optima Groupe",
-      image: Ltk,
+      image: Mockup_Ltk,
       description: "Design et développement via WordPress",
     },
   ];
