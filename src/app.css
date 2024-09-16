@@ -81,6 +81,8 @@
       --input: 240 5.9% 90%;
       --ring: 193 89% 63%; /* Adjusted to match primary */
       --radius: 0.5rem;
+      --duration: 20s;
+      --gap: 1rem;
     }
 
     .dark {
@@ -103,6 +105,8 @@
       --border: 240 3.7% 15.9%;
       --input: 240 3.7% 15.9%;
       --ring: 193 89% 63%; /* Same ring color */
+      --duration: 20s;
+      --gap: 1rem;
     }
   }
 }
