@@ -15,7 +15,7 @@ import { useState } from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { GitHubLogoIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
 import { Menu } from "lucide-react";
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
 interface RouteProps {
   href: string;
