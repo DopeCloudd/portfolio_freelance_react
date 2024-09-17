@@ -1,6 +1,7 @@
 import Mockup_Myprottracker from "@/assets/mockup-myprottracker.png";
 import Mockup_Ltk from "@/assets/mockup-ltk.png";
 import Mockup_Garnem from "@/assets/mockup-garnem.png";
+import Mockup_Optima from "@/assets/mockup-optima.png";
 
 export const Portfolio = () => {
   interface website {
@@ -43,8 +44,8 @@ export const Portfolio = () => {
     },
     {
       url: "https://optima-groupe.com/",
-      title: "Optima Groupe",
-      image: Mockup_Ltk,
+      title: "Optima Formation",
+      image: Mockup_Optima,
       description: "Design et développement via WordPress",
     },
   ];
