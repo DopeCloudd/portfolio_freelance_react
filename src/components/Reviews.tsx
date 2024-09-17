@@ -27,15 +27,15 @@ const reviews = [
     img: "https://avatar.vercel.sh/jane",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Garnem",
+    username: "@garnem",
+    body: "Une touche de modernité et de simplicité pour notre site vitrine.",
     img: "https://avatar.vercel.sh/jenny",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Optifroid",
+    username: "@optifroid",
+    body: "Valentin a créer de A à Z notre site internet, de l'hébergement à la conception graphique.",
     img: "https://avatar.vercel.sh/james",
   },
 ];
