@@ -1,13 +1,11 @@
-import { Button } from "@/components/ui/button";
-import { buttonVariants } from "@/components/ui/button";
 import { Connected } from "@/components/Connected";
 
 export const Marketing = () => {
   return (
-    <section id="marketing" className="py-16 mb-24 sm:mb-32">
+    <section id="marketing" className="py-16">
       <div className="container lg:grid lg:grid-cols-2 place-items-center">
         <div className="space-y-4 w-full">
-          <Connected />
+          <Connected className="bg-unset" />
         </div>
 
         <div>
