@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
+import { Marketing } from "@/components/Marketing";
 
 export const Cta = () => {
   return (
@@ -37,6 +38,7 @@ export const Cta = () => {
           </a>
         </div>
       </div>
+      <Marketing />
     </section>
   );
 };
