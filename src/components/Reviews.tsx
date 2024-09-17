@@ -21,9 +21,9 @@ const reviews = [
     img: "https://avatar.vercel.sh/john",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Anais Di Filippo",
+    username: "@anaisdifilippo",
+    body: "J'ai enfin un site pour montrer mon cv et mes compétences en ligne.",
     img: "https://avatar.vercel.sh/jane",
   },
   {
