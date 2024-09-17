@@ -2,6 +2,8 @@ import Mockup_Myprottracker from "@/assets/mockup-myprottracker.png";
 import Mockup_Ltk from "@/assets/mockup-ltk.png";
 import Mockup_Garnem from "@/assets/mockup-garnem.png";
 import Mockup_Optima from "@/assets/mockup-optima.png";
+import Mockup_Optifroid from "@/assets/mockup-optifroid.png";
+import Mockup_Anais from "@/assets/mockup-anais.png";
 
 export const Portfolio = () => {
   interface website {
@@ -27,7 +29,7 @@ export const Portfolio = () => {
     {
       url: "https://anais-difilippo.fr/",
       title: "Anaïs Di filippo",
-      image: Mockup_Ltk,
+      image: Mockup_Anais,
       description: "Design et développement via WordPress",
     },
     {
@@ -39,7 +41,7 @@ export const Portfolio = () => {
     {
       url: "https://optifroid.fr/",
       title: "Optifroid",
-      image: Mockup_Ltk,
+      image: Mockup_Optifroid,
       description: "Design et développement via WordPress",
     },
     {
