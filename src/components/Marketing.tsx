@@ -2,14 +2,14 @@ import { Connected } from "@/components/Connected";
 
 export const Marketing = () => {
   return (
-    <section id="marketing" className="py-16">
+    <section id="marketing" className="py-0 pt-20 md:py-16 md:pt-0">
       <div className="container lg:grid lg:grid-cols-2 place-items-center">
         <div className="space-y-4 w-full">
           <Connected className="bg-unset" />
         </div>
 
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold ">
+        <div className="pt-6 md:pt-0">
+          <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               Attirez{" "}
             </span>

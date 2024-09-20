@@ -32,7 +32,9 @@ export const Cta = () => {
           <a
             rel="noreferrer noopener"
             href="#pricing"
-            className={`border ${buttonVariants({ variant: "outline" })}`}
+            className={`border ${buttonVariants({
+              variant: "outline",
+            })} w-full md:mr-4 md:w-auto`}
           >
             Voir les tarifs
           </a>
