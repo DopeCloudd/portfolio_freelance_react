@@ -13,7 +13,11 @@ import {
 import { useState } from "react";
 
 import { ModeToggle } from "@/components/mode-toggle";
-import { GitHubLogoIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
+import {
+  GitHubLogoIcon,
+  PaperPlaneIcon,
+  ChatBubbleIcon,
+} from "@radix-ui/react-icons";
 import { Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -122,6 +126,16 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
+            <a
+              rel="noreferrer noopener"
+              href="https://blog.valentin-lerouge.fr/"
+              target="_blank"
+              className={`border ${buttonVariants({ variant: "outline" })}`}
+            >
+              <ChatBubbleIcon className="mr-2 w-5 h-5" />
+              Mon blog
+            </a>
+
             <a
               rel="noreferrer noopener"
               href="mailto:contact@valentin-lerouge.fr"
