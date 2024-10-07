@@ -11,6 +11,7 @@ export const Portfolio = () => {
     title: string;
     image?: string;
     description: string;
+    online: boolean;
   }
 
   const websites: website[] = [
@@ -19,36 +20,42 @@ export const Portfolio = () => {
       title: "MyProtTracker",
       image: Mockup_Myprottracker,
       description: "Design et développement sur mesure en React et Node.js",
+      online: false,
     },
     {
       url: "https://garnem.com/",
       title: "Garnem",
       image: Mockup_Garnem,
       description: "Refonte graphique et développement d'un site vitrine",
+      online: true,
     },
     {
       url: "https://anais-difilippo.fr/",
       title: "Anaïs Di filippo",
       image: Mockup_Anais,
       description: "Design et développement via WordPress",
+      online: false,
     },
     {
       url: "https://ltk-couverture.fr/",
       title: "LTK Couverture",
       image: Mockup_Ltk,
       description: "Design et développement via WordPress",
+      online: true,
     },
     {
       url: "https://optifroid.fr/",
       title: "Optifroid",
       image: Mockup_Optifroid,
       description: "Design et développement via WordPress",
+      online: true,
     },
     {
       url: "https://optima-groupe.com/",
       title: "Optima Formation",
       image: Mockup_Optima,
       description: "Design et développement via WordPress",
+      online: true,
     },
   ];
 
@@ -65,33 +72,38 @@ export const Portfolio = () => {
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {websites.map(({ url, title, image, description }: website) => (
-          <div
-            key={title}
-            className="space-y-3 cursor-pointer"
-            onClick={() => window.open(url, "_blank")}
-          >
-            <span data-state="closed">
-              <div className="overflow-hidden rounded-md relative border border-muted">
-                <img
-                  alt="Thinking Components"
-                  loading="lazy"
-                  width="300"
-                  height="200"
-                  decoding="async"
-                  data-nimg="1"
-                  className="w-auto object-cover transition-all hover:scale-105"
-                  srcSet={image}
-                  src={image}
-                />
-                <div className="space-y-1 text-left font-bold text-sm absolute bottom-0 z-10 bg-white/75 dark:bg-black/75 w-full p-4">
-                  {title}
-                  <p className="text-muted-foreground text-sm">{description}</p>
+        {websites.map(({ url, title, image, description, online }: website) =>
+          // if online, display it
+          online === true ? (
+            <div
+              key={title}
+              className="space-y-3 cursor-pointer"
+              onClick={() => window.open(url, "_blank")}
+            >
+              <span data-state="closed">
+                <div className="overflow-hidden rounded-md relative border border-muted">
+                  <img
+                    alt="Thinking Components"
+                    loading="lazy"
+                    width="300"
+                    height="200"
+                    decoding="async"
+                    data-nimg="1"
+                    className="w-auto object-cover transition-all hover:scale-105"
+                    srcSet={image}
+                    src={image}
+                  />
+                  <div className="space-y-1 text-left font-bold text-sm absolute bottom-0 z-10 bg-white/75 dark:bg-black/75 w-full p-4">
+                    {title}
+                    <p className="text-muted-foreground text-sm">
+                      {description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </span>
-          </div>
-        ))}
+              </span>
+            </div>
+          ) : null
+        )}
       </div>
     </section>
   );
