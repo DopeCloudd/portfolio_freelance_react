@@ -2,7 +2,7 @@ import { Connected } from "@/components/Connected";
 
 export const Marketing = () => {
   return (
-    <section id="marketing" className="py-0 pt-20 md:py-16 md:pt-0">
+    <section id="marketing" className="py-0 pt-20 md:py-16">
       <div className="container lg:grid lg:grid-cols-2 place-items-center">
         <div className="space-y-4 w-full">
           <Connected className="bg-unset" />
