@@ -13,11 +13,7 @@ import {
 import { useState } from "react";
 
 import { ModeToggle } from "@/components/mode-toggle";
-import {
-  GitHubLogoIcon,
-  PaperPlaneIcon,
-  ChatBubbleIcon,
-} from "@radix-ui/react-icons";
+import { PaperPlaneIcon, ChatBubbleIcon } from "@radix-ui/react-icons";
 import { Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -78,7 +74,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Valentin LEROUGE
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -95,14 +91,26 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://blog.valentin-lerouge.fr/"
                     target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
-                      variant: "secondary",
+                    className={`border ${buttonVariants({
+                      variant: "outline",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    <ChatBubbleIcon className="mr-2 w-5 h-5" />
+                    Mon blog
+                  </a>
+
+                  <a
+                    rel="noreferrer noopener"
+                    href="mailto:contact@valentin-lerouge.fr"
+                    target="_blank"
+                    className={`border ${buttonVariants({
+                      variant: "default",
+                    })}`}
+                  >
+                    <PaperPlaneIcon className="mr-2 w-5 h-5" />
+                    Contact
                   </a>
                 </nav>
               </SheetContent>
