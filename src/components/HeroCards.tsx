@@ -12,7 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { Check, FacebookIcon, Linkedin } from "lucide-react";
+import { Check, Linkedin } from "lucide-react";
 
 export const HeroCards = () => {
   return (
@@ -57,18 +57,6 @@ export const HeroCards = () => {
 
         <CardFooter>
           <div>
-            <a
-              rel="noreferrer noopener"
-              href="https://www.facebook.com/profile.php?id=61564522257510"
-              target="_blank"
-              className={buttonVariants({
-                variant: "ghost",
-                size: "sm",
-              })}
-            >
-              <span className="sr-only">Facebook icon</span>
-              <FacebookIcon size="20" />
-            </a>
             <a
               rel="noreferrer noopener"
               href="https://github.com/DopeCloudd"

@@ -7,31 +7,38 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
-            Développeur{" "}
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
+            Développeur {""}
+            <span className="inline bg-gradient-to-r from-primary/60 to-primary text-transparent bg-clip-text">
               web
             </span>{" "}
             freelance
           </h1>{" "}
-          sur{" "}
+          sur {""}
           <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
+            <span className="inline bg-gradient-to-r from-primary/60 to-primary text-transparent bg-clip-text">
               Montpellier
             </span>
           </h2>
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Créons ensemble votre site ou application web qui vous ressemble et
-          qui répond à vos besoins.
+          Sites, applications et automatisations sur mesure. Je conçois aussi
+          des robots de scraping et des intégrations pour éliminer les tâches
+          répétitives et vous donner de la visibilité sur vos données.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
           <Button
             className="w-full md:w-1/3"
-            onClick={() => window.open("mailto:contact@valentin-lerouge.fr")}
+            onClick={() => (window.location.hash = "#automations")}
           >
-            Me contacter
+            Automatisations
+          </Button>
+          <Button
+            className="w-full md:w-1/3"
+            onClick={() => (window.location.hash = "#creation")}
+          >
+            Site web
           </Button>
         </div>
       </div>

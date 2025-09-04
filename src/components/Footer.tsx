@@ -1,142 +1,127 @@
 export const Footer = () => {
   return (
-    <footer id="footer">
-      <hr className="w-11/12 mx-auto" />
-
-      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-x-12 gap-y-8">
-        <div className="col-span-full xl:col-span-2">
+    <footer
+      id="footer"
+      className="bg-gradient-to-b from-muted/50 to-background border-t"
+    >
+      <section className="container py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-10">
+        <div className="space-y-4">
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl tracking-tight"
           >
             VALENTIN LEROUGE
           </a>
+          <p className="text-sm text-muted-foreground max-w-xs">
+            Développement web, création de sites et automatisations fiables pour
+            gagner du temps et booster votre visibilité.
+          </p>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Navigation</h3>
-          <div>
+        <div className="space-y-3">
+          <h3 className="font-semibold">Navigation</h3>
+          <nav className="grid gap-2 text-sm">
+            <a
+              rel="noreferrer noopener"
+              href="#creation"
+              className="opacity-70 hover:opacity-100"
+            >
+              Création
+            </a>
+            <a
+              rel="noreferrer noopener"
+              href="#automations"
+              className="opacity-70 hover:opacity-100"
+            >
+              Automatisations
+            </a>
             <a
               rel="noreferrer noopener"
               href="#services"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100"
             >
-              Étapes
+              Services
             </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#portfolio"
-              className="opacity-60 hover:opacity-100"
-            >
-              Projets
-            </a>
-          </div>
-
-          <div>
             <a
               rel="noreferrer noopener"
               href="#pricing"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100"
             >
               Tarifs
             </a>
-          </div>
-
-          <div>
             <a
               rel="noreferrer noopener"
               href="#faq"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100"
             >
               FAQ
             </a>
-          </div>
+          </nav>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Me suivre</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="https://www.facebook.com/profile.php?id=61564522257510"
-              target="_blank"
-              className="opacity-60 hover:opacity-100"
-            >
-              Facebook
-            </a>
-          </div>
-
-          <div>
+        <div className="space-y-3">
+          <h3 className="font-semibold">Réseaux</h3>
+          <nav className="grid gap-2 text-sm">
             <a
               rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100"
             >
-              Linkedin
+              LinkedIn
             </a>
-          </div>
-          <div>
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className="opacity-60 hover:opacity-100"
+              href="#"
+              className="opacity-70 hover:opacity-100"
             >
               Github
             </a>
-          </div>
+          </nav>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Utiles</h3>
-          <div>
+        <div className="space-y-3">
+          <h3 className="font-semibold">Légal</h3>
+          <nav className="grid gap-2 text-sm">
             <a
               rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100"
             >
               Mentions légales
             </a>
-          </div>
-
-          <div>
             <a
               rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100"
             >
               Politique de confidentialité
             </a>
-          </div>
-
-          <div>
             <a
               rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
+              href="#about"
+              className="opacity-70 hover:opacity-100"
             >
-              Plan du site
+              À propos
             </a>
-          </div>
+          </nav>
         </div>
       </section>
 
-      <section className="container pb-14 text-center">
-        <h3>
-          Copyrights © 2024.{" "}
+      <section className="border-t">
+        <div className="container py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm">
+          <p className="text-muted-foreground">
+            © 2024 Valentin Lerouge. Tous droits réservés.
+          </p>
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/valentin-lerouge-b623b51a4/"
-            className="text-primary transition-all border-primary hover:border-b-2"
+            href="mailto:contact@valentin-lerouge.fr"
+            className="text-primary hover:underline"
           >
-            Valentin LEROUGE
+            contact@valentin-lerouge.fr
           </a>
-        </h3>
+        </div>
       </section>
     </footer>
   );

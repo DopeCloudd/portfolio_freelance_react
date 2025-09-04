@@ -18,31 +18,31 @@ const features: FeatureProps[] = [
     icon: <AnalyseIcon />,
     title: "Analyse",
     description:
-      "Nous analysons votre projet pour comprendre vos besoins et vos objectifs",
+      "Analyse de votre projet pour comprendre vos besoins et vos objectifs",
   },
   {
     icon: <DesignIcon />,
     title: "Design",
     description:
-      "Nous créons un design unique et moderne qui correspond à votre image et vos valeurs",
+      "Création d'un design unique et moderne qui correspond à votre image et vos valeurs",
   },
   {
     icon: <DevIcon />,
     title: "Code",
     description:
-      "Nous développons votre site web avec des technologies adaptées à vos besoins",
+      "Développement de votre site web avec des technologies adaptées à vos besoins",
   },
   {
     icon: <TestIcon />,
     title: "Tests",
     description:
-      "Nous testons votre site web pour garantir un fonctionnement optimal",
+      "Tests de votre site web pour garantir un fonctionnement optimal",
   },
   {
     icon: <LivraisonIcon />,
     title: "Livraison",
     description:
-      "Nous livrons votre site web et vous accompagnons pour sa mise en ligne",
+      "Livraison de votre site web et accompagnement pour sa mise en ligne",
   },
 ];
 
@@ -63,7 +63,10 @@ export const Services = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {features.map(({ icon, title, description }: FeatureProps) => (
-          <Card key={title} className="bg-muted/50">
+          <Card
+            key={title}
+            className="bg-muted/50 border shadow-sm hover:shadow-md transition-shadow"
+          >
             <CardHeader>
               <CardTitle className="grid gap-4 place-items-center">
                 {icon}

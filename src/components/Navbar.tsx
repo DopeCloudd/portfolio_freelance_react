@@ -13,9 +13,9 @@ import {
 import { useState } from "react";
 
 import { ModeToggle } from "@/components/mode-toggle";
-import { PaperPlaneIcon, ChatBubbleIcon } from "@radix-ui/react-icons";
-import { Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
+import { ChatBubbleIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
+import { Menu } from "lucide-react";
 
 interface RouteProps {
   href: string;
@@ -23,35 +23,25 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
-  {
-    href: "#services",
-    label: "Étapes",
-  },
-  {
-    href: "#portfolio",
-    label: "Projets",
-  },
-  {
-    href: "#pricing",
-    label: "Tarifs",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
+  { href: "#creation", label: "Site web" },
+  { href: "#automations", label: "Automatisations" },
+  { href: "#services", label: "Collaboration" },
+  { href: "#pricing", label: "Tarifs" },
+  { href: "#faq", label: "FAQ" },
+  { href: "#about", label: "À propos" },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+    <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-16 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex"
+              className="ml-2 font-bold text-lg md:text-xl flex tracking-tight"
             >
               VALENTIN LEROUGE
             </a>
@@ -118,13 +108,13 @@ export const Navbar = () => {
           </span>
 
           {/* desktop */}
-          <nav className="hidden md:flex gap-2">
+          <nav className="hidden md:flex gap-1">
             {routeList.map((route: RouteProps, i) => (
               <a
                 rel="noreferrer noopener"
                 href={route.href}
                 key={i}
-                className={`text-[17px] ${buttonVariants({
+                className={`text-[15px] ${buttonVariants({
                   variant: "ghost",
                 })}`}
               >
@@ -151,7 +141,7 @@ export const Navbar = () => {
               className={`border ${buttonVariants({ variant: "default" })}`}
             >
               <PaperPlaneIcon className="mr-2 w-5 h-5" />
-              Contact
+              Me contacter
             </a>
 
             <ModeToggle />
